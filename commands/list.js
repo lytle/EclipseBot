@@ -25,7 +25,7 @@ try {
 			// List out submissions
 			var i = 0;
 			for (const submission in submissions) { // why tf does this work but not a for
-				returnEmbed.addField(usernames[i], submissions[i], true)
+				returnEmbed.addField(usernames[i], submissions[i++], true)
 			}
 		}
 
