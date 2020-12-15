@@ -117,4 +117,5 @@ process.on('unhandledRejection', error => {
 });
 
 // GO --------------------------------------------------------------------------
-client.login(process.env.BOT_TOKEN);
+//client.login(process.env.BOT_TOKEN);
+client.login(`NzY0MjQzNzMzMzMxMDUwNTM5.X4DbcA.HEJrZIV2j7JmBTaigw1DwaH8YTY`);

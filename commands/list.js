@@ -24,8 +24,9 @@ try {
 			// List out submissions
 			var i = 0;
 			for (const submission in submissions) { // why tf does this work but not a for
+				submissionName = await CurationSubmissions.findOne({ where: { username: usernames[i] } });
 				returnEmbed.addFields(
-		  		{ name: usernames[i], value: submissions[i++] }
+		  		{ name: usernames[i++], value: submissionName.get('name') }
 				);
 			}
 		}
